@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(49,50,51);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, a {
+  color: #FFF;
+}
+
+h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+p {
+  color: gray;
+}
+.header {
+  margin: 20px 120px;
+}
+.header-navigation a:hover {
+  color: rgb(188, 192, 198);
+}
+.header-navigation a {
+  text-decoration: none;
+  padding-right: 15px;
+}
+.header-navigation {
+  display: inline-block;
+  font-weight: bold;
+}
+.search-bar {
+  display: inline-block;
+  float: right;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+.search-bar a{
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.search-bar a:hover {
+  text-decoration: underline;
+}
+.search-input {
+  background-color: #4f4f4f;
+  border: none;
+  border-radius: 2px;
+  width: 200px;
+  height: 35px;
+  font-size: 14px;
+  margin-right: 25px;
+  text-indent: 10px;
+  color: #FFF;
+}
+.search-input:focus {
+  outline: none;
+}
+.main-body {
+  margin: 150px 120px;
+}
+.body-text {
+  display: inline-block;
+  width: 50%;
+  font-size: 18px;
+  line-height: 70px;
+}
+.body-text p {
+  line-height: 30px;
+}
+.sign-up {
+  display: inline-block;
+  width: 50%;
+  margin-top: 10px;
+  float: right;
+  font-size: 12px;
+}
+.sign-up input {
+  display: block;
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  height: 38px;
+  font-size: 15px;
+  text-indent: 10px;
+  width: 330px;
+  margin-top: 20px;
+}
+.sign-up input:focus {
+  outline: none;
+  webkit-box-shadow: 0 0 0px 5px #6B6565;
+  -moz-box-shadow: 0 0 0px 5px #6B6565;
+  box-shadow: 0 0 0px 5px #6B6565;
+}
+.sign-up form {
+  margin-left: 180px;
+}
+.submit {
+  background-color: #f56200;
+  color: #FFF;
+  cursor: pointer;
+}
