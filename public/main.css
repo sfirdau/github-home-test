@@ -1,102 +1,115 @@
 body {
-  background-color: rgb(49,50,51);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13.5px;
+  letter-spacing: 1px;
+  margin: 20px 120px;
+  color: #696969;
 }
 
-h1, a {
-  color: #FFF;
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
-
-h1 {
-  font-size: 65px;
-  margin: 0;
-}
-
-p {
-  color: gray;
+a:visited {
+    color: #2b2828;
 }
 .header {
-  margin: 20px 120px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(211,211,211,0.5);
 }
-.header-navigation a:hover {
-  color: rgb(188, 192, 198);
-}
-.header-navigation a {
-  text-decoration: none;
-  padding-right: 15px;
-}
-.header-navigation {
+
+.logo-home {
   display: inline-block;
-  font-weight: bold;
 }
-.search-bar {
-  display: inline-block;
-  float: right;
-  font-weight: bold;
+
+.material-icons {
   color: #4f4f4f;
 }
-.search-bar a{
-  text-decoration: none;
-  letter-spacing: 0.5px;
-}
-.search-bar a:hover {
-  text-decoration: underline;
-}
-.search-input {
-  background-color: #4f4f4f;
-  border: none;
-  border-radius: 2px;
-  width: 200px;
-  height: 35px;
-  font-size: 14px;
-  margin-right: 25px;
-  text-indent: 10px;
-  color: #FFF;
-}
-.search-input:focus {
-  outline: none;
-}
-.main-body {
-  margin: 150px 120px;
-}
-.body-text {
+
+.search {
   display: inline-block;
-  width: 50%;
-  font-size: 18px;
-  line-height: 70px;
-}
-.body-text p {
-  line-height: 30px;
-}
-.sign-up {
-  display: inline-block;
-  width: 50%;
-  margin-top: 10px;
   float: right;
-  font-size: 12px;
+  color:#4f4f4f;
 }
-.sign-up input {
+
+.sign-up {
+  color: #02b875;
+  padding-left: 30px;
+}
+
+.icon-search {
+  color:#4f4f4f;
+}
+
+.navigation {
+  margin-top: 12px;
+  margin-bottom: 100px;
+  width: 100%;
+  background-color: #fff;
+  }
+
+.navigation a {
+  padding-right: 15px;
+  color: 	#808080;
+  float: left;
   display: block;
-  border: none;
-  border-radius: 3px;
-  width: 200px;
-  height: 38px;
-  font-size: 15px;
-  text-indent: 10px;
-  width: 330px;
-  margin-top: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(211,211,211,0.5);
+  }
+
+.popular-reads {
+  font-size: 22px;
+  color: #02b875;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
-.sign-up input:focus {
-  outline: none;
-  webkit-box-shadow: 0 0 0px 5px #6B6565;
-  -moz-box-shadow: 0 0 0px 5px #6B6565;
-  box-shadow: 0 0 0px 5px #6B6565;
+.main-image {
+  display: inline-block;
+  width: 60%;
+  margin-bottom: 40px;
 }
-.sign-up form {
-  margin-left: 180px;
+.main-article {
+  display: inline-block;
+  float: right;
+  width: 36%;
+  font-size: 36px;
+  font-weight: 700;
 }
-.submit {
-  background-color: #f56200;
-  color: #FFF;
-  cursor: pointer;
+.content {
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.author-image {
+  border-radius: 50%;
+  /*display: inline-block;*/
+}
+
+.author-name {
+  font-size: 14px;
+  color: #02b875;
+  font-weight: 300;
+  /*display: inline-block;*/
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 300;
+  color: #808080;
+}
+
+.sub-article {
+  display: inline-block;
+  width: 31%;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.avatar-text {
+  display: inline-block;
 }
