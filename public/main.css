@@ -2,16 +2,13 @@ body {
   background-color: rgb(49,50,51);
   font-family: 'Open Sans', sans-serif;
 }
-
 h1, a {
   color: #FFF;
 }
-
 h1 {
   font-size: 65px;
   margin: 0;
 }
-
 p {
   color: gray;
 }
@@ -35,7 +32,7 @@ p {
   font-weight: bold;
   color: #4f4f4f;
 }
-.search-bar a{
+.search-bar a {
   text-decoration: none;
   letter-spacing: 0.5px;
 }
@@ -50,6 +47,10 @@ p {
   height: 35px;
   font-size: 14px;
   margin-right: 25px;
+  /*
+    probably not the best solution here.  i would prefer to use padding,
+    since there are no multiple lines of text
+  */
   text-indent: 10px;
   color: #FFF;
 }
@@ -82,6 +83,7 @@ p {
   width: 200px;
   height: 38px;
   font-size: 15px;
+  /* same comment as above */
   text-indent: 10px;
   width: 330px;
   margin-top: 20px;
