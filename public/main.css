@@ -5,48 +5,42 @@ body {
   margin: 20px 120px;
   color: #696969;
 }
-
 a {
   text-decoration: none;
+  /* unnecessary, default browser behavior */
   cursor: pointer;
 }
 a:visited {
-    color: #2b2828;
+  color: #2b2828;
 }
 .header {
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(211,211,211,0.5);
 }
-
 .logo-home {
   display: inline-block;
 }
-
 .material-icons {
   color: #4f4f4f;
 }
-
 .search {
   display: inline-block;
   float: right;
   color:#4f4f4f;
 }
-
 .sign-up {
   color: #02b875;
   padding-left: 30px;
 }
-
 .icon-search {
   color:#4f4f4f;
 }
-
 .navigation {
   margin-top: 12px;
   margin-bottom: 100px;
   width: 100%;
   background-color: #fff;
-  }
+}
 
 .navigation a {
   padding-right: 15px;
@@ -86,22 +80,17 @@ a:visited {
 
 .author-image {
   border-radius: 50%;
-  /*display: inline-block;*/
 }
-
 .author-name {
   font-size: 14px;
   color: #02b875;
   font-weight: 300;
-  /*display: inline-block;*/
 }
-
 .date {
   font-size: 12px;
   font-weight: 300;
   color: #808080;
 }
-
 .sub-article {
   display: inline-block;
   width: 31%;
