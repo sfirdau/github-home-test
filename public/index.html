@@ -11,7 +11,7 @@
     <nav> is the same a div, but it notifies the browser 'hey this is important, it's how you navigate'
   -->
   <div class="main-header">
-    <nav class="header">
+    <nav class="header container">
       <ul class="header-navigation">
         <li>
           <a href="">Features</a>
@@ -37,7 +37,7 @@
     </nav>
 
     <!-- This too could be more semantic, using <article> <section> <header> etc -->
-    <article class="main-body">
+    <article class="main-body container">
       <section class="body-text">
         <!-- Great use of <h1> and <p> -->
         <h1>Built for <br> developers</h1>
@@ -46,12 +46,13 @@
       <section class="sign-up">
         <form>
           <input type="text" name="username" placeholder="Pick a username" />
-          <input type="text" name="email" placeholder="Your email address" />
-          <input type="text" name="password" placeholder="Create a password" />
+          <input type="email" name="email" placeholder="Your email address" />
+          <input type="password" name="password" placeholder="Create a password" />
           <p>Use at least one letter, one numeral, and seven characters.</p>
           <input class="submit" type="submit" name="signup" value="Sign up for GitHub" />
           <p style="text-align: center">
-            By clicking "Sign up for GitHub", you agree to our <a href="">terms of service</a> and <a href="">privacy</a> policy. We’ll occasionally send you account related emails.
+            By clicking "Sign up for GitHub", you agree to our <a href="">terms of service</a> and <a href="">privacy</a> policy.
+            <span class="email-text">We’ll occasionally send you account related emails.</span>
           </p>
        </form>
      </section>
