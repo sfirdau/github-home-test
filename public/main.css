@@ -1,6 +1,7 @@
 body {
   background-color: rgb(49,50,51);
   font-family: 'Open Sans', sans-serif;
+  margin:0;
 }
 h1, a {
   color: #FFF;
@@ -12,8 +13,24 @@ h1 {
 p {
   color: gray;
 }
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin-top: 0;
+}
+li {
+  display: inline;
+}
+.main-header {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2e/85/8d/2e858d91a9ca113bee0dcff3c9091284.jpg");
+}
 .header {
-  margin: 20px 120px;
+  margin: 0px;
+  padding: 20px 120px;
+  font-weight: bold;
+
 }
 .header-navigation a:hover {
   color: rgb(188, 192, 198);
@@ -21,10 +38,6 @@ p {
 .header-navigation a {
   text-decoration: none;
   padding-right: 15px;
-}
-.header-navigation {
-  display: inline-block;
-  font-weight: bold;
 }
 .search-bar {
   display: inline-block;
@@ -47,18 +60,18 @@ p {
   height: 35px;
   font-size: 14px;
   margin-right: 25px;
-  /*
-    probably not the best solution here.  i would prefer to use padding,
-    since there are no multiple lines of text
-  */
-  text-indent: 10px;
+  padding-left: 10px;
   color: #FFF;
 }
 .search-input:focus {
   outline: none;
 }
 .main-body {
-  margin: 150px 120px;
+  padding: 140px 120px;
+  /* one way commonly used to constrain widthl */
+  /*width: 70%;
+  max-width: 1100px;
+  margin: 0 auto;*/
 }
 .body-text {
   display: inline-block;
@@ -72,7 +85,6 @@ p {
 .sign-up {
   display: inline-block;
   width: 50%;
-  margin-top: 10px;
   float: right;
   font-size: 12px;
 }
@@ -83,8 +95,7 @@ p {
   width: 200px;
   height: 38px;
   font-size: 15px;
-  /* same comment as above */
-  text-indent: 10px;
+  padding-left: 10px;
   width: 330px;
   margin-top: 20px;
 }

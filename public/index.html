@@ -9,34 +9,23 @@
     <!--
     This header should be more semantic. Read some more about semantic html http://www.hongkiat.com/blog/html-5-semantics/
     <nav> is the same a div, but it notifies the browser 'hey this is important, it's how you navigate'
-    Here's how I would do it, for example:
+  -->
+  <div class="main-header">
     <nav class="header">
       <ul class="header-navigation">
         <li>
           <a href="">Features</a>
         </li>
         <li>
-          <a href="">Business</a>
+          <a href="">Buisness</a>
         </li>
         <li>
           <a href="">Explore</a>
         </li>
         <li>
-          <a href="">pricing</a>
+          <a href="">Pricing</a>
         </li>
       </ul>
-      <div class="search-bar">
-        ...same as what you have
-      </div>
-    </nav>
-  -->
-    <div class="header">
-      <div class="header-navigation">
-        <a href="">Features</a>
-        <a href="">Buisness</a>
-        <a href="">Explore</a>
-        <a href="">Pricing</a>
-      </div>
       <div class="search-bar">
         <form>
           <input class="search-input" type="text" name="search" placeholder="Search Git-Hub" />
@@ -45,16 +34,16 @@
           <a href="">Sign up</a>
         </form>
       </div>
-    </div>
+    </nav>
 
     <!-- This too could be more semantic, using <article> <section> <header> etc -->
-    <div class="main-body">
-      <div class="body-text">
+    <article class="main-body">
+      <section class="body-text">
         <!-- Great use of <h1> and <p> -->
-        <h1>Built for developers</h1>
+        <h1>Built for <br> developers</h1>
         <p>GitHub is a development platform inspired by the way you work. From <a href="">open source</a> to <a href="">business</a>, you can host and review code, manage projects, and build software alongside millions of other developers.</p>
-      </div>
-      <div class="sign-up">
+      </section>
+      <section class="sign-up">
         <form>
           <input type="text" name="username" placeholder="Pick a username" />
           <input type="text" name="email" placeholder="Your email address" />
@@ -65,11 +54,10 @@
             By clicking "Sign up for GitHub", you agree to our <a href="">terms of service</a> and <a href="">privacy</a> policy. We’ll occasionally send you account related emails.
           </p>
        </form>
-     </div>
-    </div>
-
-
-    <script src="//localhost:35729/livereload.js"></script>
+     </section>
+   </article>
+   <script src="//localhost:35729/livereload.js"></script>
+</div>
   </body>
 </html>
 
