@@ -1,67 +1,65 @@
 <html>
-  <head>
-    <title>The world's leading software development platform - GitHub </title>
+
+<head>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <!--
-    This header should be more semantic. Read some more about semantic html http://www.hongkiat.com/blog/html-5-semantics/
-    <nav> is the same a div, but it notifies the browser 'hey this is important, it's how you navigate'
-  -->
-  <div class="main-header">
-    <nav class="header container">
-      <ul class="header-navigation">
-        <li>
-          <a href="">Features</a>
-        </li>
-        <li>
-          <a href="">Buisness</a>
-        </li>
-        <li>
-          <a href="">Explore</a>
-        </li>
-        <li>
-          <a href="">Pricing</a>
-        </li>
-      </ul>
-      <div class="search-bar">
-        <form>
-          <input class="search-input" type="text" name="search" placeholder="Search Git-Hub" />
-          <a href="">Sign in</a>
-          or
-          <a href="">Sign up</a>
-        </form>
-      </div>
-    </nav>
-
-    <!-- This too could be more semantic, using <article> <section> <header> etc -->
-    <article class="main-body container">
-      <section class="body-text">
-        <!-- Great use of <h1> and <p> -->
-        <h1>Built for <br> developers</h1>
-        <p>GitHub is a development platform inspired by the way you work. From <a href="">open source</a> to <a href="">business</a>, you can host and review code, manage projects, and build software alongside millions of other developers.</p>
-      </section>
-      <section class="sign-up">
-        <form>
-          <input type="text" name="username" placeholder="Pick a username" />
-          <input type="email" name="email" placeholder="Your email address" />
-          <input type="password" name="password" placeholder="Create a password" />
-          <p>Use at least one letter, one numeral, and seven characters.</p>
-          <input class="submit" type="submit" name="signup" value="Sign up for GitHub" />
-          <p style="text-align: center">
-            By clicking "Sign up for GitHub", you agree to our <a href="">terms of service</a> and <a href="">privacy</a> policy.
-            <span class="email-text">We’ll occasionally send you account related emails.</span>
-          </p>
-       </form>
-     </section>
-   </article>
-   <script src="//localhost:35729/livereload.js"></script>
-</div>
-  </body>
+    <title>Stanford University</title>
+</head>
+<body>
+  <div class="header">
+    <h1 class="uni-name">Stanford University</h1>
+    <div class="search-type hide-for-mobile">
+      <label>
+        Web
+        <input class="search-web" type="radio" name="web" checked="checked" />
+      </label>
+      <label>
+        People
+        <input class="search-people" type="radio" name="web" />
+      </label>
+    <div class="input-wrapper">
+      <input class="search-input" type="text" name="search" placeholder="Search web or people" />
+      <button type="submit" class="submit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+    </div>
+  </div>
+  <nav class="nav-container hide-for-mobile">
+    <ul class="nav-bar">
+      <li><a href="">About Stanford</a></li>
+      <li><a href="">Admission</a></li>
+      <li><a href="">Academics</a></li>
+      <li><a href="">Research</a></li>
+      <li><a href="">Campus Life</a></li>
+    </ul>
+    <ul class="nav-gateway">
+      <li><a href="">Students</a></li>
+      <li><a href="">Faculty / Staff</a></li>
+      <li><a href="">Parents</a></li>
+      <li><a href="">Alumni</a></li>
+    </ul>
+  </nav>
+  <ul class="hide-for-desktop">
+    <li>test</li>
+  </ul>
+  <div class="carousel-container">
+    <div class="carousel-image">
+      <a href="http://placehold.it">
+        <img src="http://placehold.it/1170x425">
+      </a>
+    </div>
+    <div class="carousel-caption">
+      <h2>Heritage of innovation</h2>
+      <p>
+        Stanford Engineering's pivotal technologies transform the worlds of
+        human health, communications, energy, buisness and beyond.
+      </p>
+    </div>
+  </div>
+</body>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
 </html>
-
-<!-- Overall, looks really great and professional!!
-Next step is to add media queries to make it responsive.
-Also, let's add a background image to header. -->

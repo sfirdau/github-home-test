@@ -1,133 +1,157 @@
 body {
-  background-color: rgb(49,50,51);
-  font-family: 'Open Sans', sans-serif;
-  margin:0;
-}
-h1, a {
-  color: #FFF;
-}
-h1 {
-  font-size: 65px;
+  background-color: #F7F7F7;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
-p {
-  color: gray;
+a {
+  text-decoration: none;
+  color: #383838;
+}
+h1{
+  margin: 20px 20px;
 }
 ul {
   display: inline-block;
   list-style-type: none;
-  margin-top: 0;
+  margin-top: 5px;
 }
 li {
   display: inline;
 }
-.container {
-  width: 70%;
-  max-width: 1100px;
-  margin: 0 auto;
+.nav-container a:hover {
+  color: #808080;
+  border-bottom: 2px solid #424344;
 }
-.main-header {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2e/85/8d/2e858d91a9ca113bee0dcff3c9091284.jpg");
+img {
+  max-width: 100%;
+  height: auto;
 }
 .header {
-  padding: 20px 120px;
-  font-weight: bold;
-}
-.header-navigation a:hover {
-  color: rgb(188, 192, 198);
-}
-.header-navigation a {
-  text-decoration: none;
-  padding-right: 15px;
-}
-.search-bar {
-  display: inline-block;
-  float: right;
-  font-weight: bold;
-  color: #4f4f4f;
-}
-.search-bar a {
-  text-decoration: none;
-  letter-spacing: 0.5px;
-}
-.search-bar a:hover {
-  text-decoration: underline;
-}
-.search-input {
-  background-color: #4f4f4f;
-  border: none;
-  border-radius: 2px;
-  width: 200px;
-  height: 35px;
-  font-size: 14px;
-  margin-right: 25px;
-  padding-left: 10px;
+  background-color: #8c1515;
   color: #FFF;
+  font-size: 20px;
 }
-.search-input:focus {
-  outline: none;
-}
-.main-body {
-  /*padding: 140px 120px;*/
-  /* one way commonly used to constrain widthl */
-  padding: 140px 0;
-  /*width: 70%;
-  max-width: 1100px;
-  margin: 0 auto;*/
-}
-.body-text {
+.uni-name {
   display: inline-block;
-  width: 50%;
-  font-size: 18px;
-  line-height: 70px;
 }
-.body-text p {
-  line-height: 30px;
-}
-.sign-up {
+.search-type {
   display: inline-block;
-  width: 50%;
   float: right;
-  font-size: 12px;
-}
-.sign-up input {
-  display: block;
-  border: none;
-  border-radius: 3px;
+  font-size: 14px;
+  padding: 30px 65px;
+  }
+.search-input {
+  height: 30px;
   width: 200px;
-  height: 38px;
-  font-size: 15px;
+  font-size: 13px;
   padding-left: 10px;
-  width: 330px;
-  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #e9e6df;
 }
-.sign-up input:focus {
-  outline: none;
-  webkit-box-shadow: 0 0 0px 5px #6B6565;
-  -moz-box-shadow: 0 0 0px 5px #6B6565;
-  box-shadow: 0 0 0px 5px #6B6565;
-}
-.sign-up form {
-  margin-left: 180px;
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
 }
 .submit {
-  background-color: #f56200;
-  color: #FFF;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 14px;
+  border: none;
+  background-color: #FFF;
   cursor: pointer;
+  color: #424344;
 }
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+.submit:hover {
+  color: #808080;
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+.nav-container {
+  background-color: #f2f1eb;
 }
-
+.nav-bar {
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 35px;
+  margin-bottom: 5px;
+}
+.nav-bar li {
+  padding-right: 30px;
+}
+.nav-gateway {
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.nav-gateway li {
+  padding-left: 20px;
+}
+.carousel-container {
+  position: relative;
+  display: inline-block;
+  padding: 0px 10px;
+}
+.carousel-caption {
+  background-color: rgba(242, 241, 235, 0.7);
+  font-weight: bold;
+}
+h2 {
+  color: #8c1515;
+  font-size: 1em;
+  text-transform: uppercase;
+  display: inline;
+}
+p {
+  display: inline;
+  line-height: 1.5;
+}
+.hide-for-desktop {
+  display: block;
+}
+.hide-for-mobile {
+  display: none;
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
-}
+  .hide-for-desktop {
+    display: none;
+  }
+  .hide-for-mobile {
+    display: block;
+  }
+  h1 {
+    margin: 20px 10px;
+  }
+  .header {
+    padding-left: 40px;
+  }
+  .nav-bar {
+    margin-left: 15px;
+  }
+  .nav-gateway {
+    padding-right: 70px;
+  }
+  .carousel-image {
+    padding: 10px 50px;
+  }
+  h2 {
+    font-size: 40px;
+    text-transform: none;
+  }
+  p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: normal;
+  }
+  .carousel-caption {
+    max-width: 35%;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 10px 10px 0px 30px;
+    margin: 0px 70px 30px 0px;
+  }
