@@ -7,7 +7,7 @@ a {
   text-decoration: none;
   color: #383838;
 }
-h1{
+h1 {
   margin: 20px 20px;
 }
 ul {
@@ -92,11 +92,12 @@ img {
 .carousel-container {
   position: relative;
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px;
 }
 .carousel-caption {
   background-color: rgba(242, 241, 235, 0.7);
   font-weight: bold;
+  padding-left: 10px;
 }
 h2 {
   color: #8c1515;
@@ -108,12 +109,59 @@ p {
   display: inline;
   line-height: 1.5;
 }
+h3 {
+  color: #5f574f;
+  font-size: 25px;
+  padding: 5px 20px;
+  border-bottom: 1px solid rgba(211,211,211,0.5);
+}
+.top-stories {
+  padding-left: 10px;
+}
+.new-story {
+  display: inline-block;
+  width: 25%;
+}
+.news-text {
+  width: 80%;
+  font-size: 14px;
+  line-height: 2;
+}
+h4 {
+  font-size: 20px;
+  margin: 0;
+}
+h5 {
+  color: #8c1515;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0;
+}
+.more-news {
+  padding-left: 0;
+  padding-right: 40px;
+}
+.more-news li {
+  padding-top: 10px;
+}
+.more-headlines li {
+  display: block;
+  font-size: 16px;
+}
+.more-headlines a:hover {
+  color: #8c1515;
+  text-decoration: underline;
+}
 .hide-for-desktop {
   display: block;
 }
 .hide-for-mobile {
   display: none;
 }
+.col-sm-3 {
+  width: 100%;
+}
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .hide-for-desktop {
@@ -154,4 +202,16 @@ p {
     bottom: 5px;
     padding: 10px 10px 0px 30px;
     margin: 0px 70px 30px 0px;
+  }
+  .top-stories {
+    padding-left: 60px;
+    padding-top: 10px;
+  }
+  h3 {
+    padding: 5px 60px;
+    margin-bottom: 5px;
+  }
+  .col-sm-3 {
+    width: 25%;
+    float: left;
   }
