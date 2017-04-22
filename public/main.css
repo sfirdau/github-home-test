@@ -158,10 +158,21 @@ h5 {
 .hide-for-mobile {
   display: none;
 }
-.col-sm-3 {
+.col-sm-* {
   width: 100%;
 }
-
+.time {
+  display: inline-block;
+}
+.twitter-link {
+  display: inline-block;
+}
+.tweet {
+  display: inline-block;
+}
+.media-icons {
+  display: inline-block;
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .hide-for-desktop {
@@ -213,5 +224,9 @@ h5 {
   }
   .col-sm-3 {
     width: 25%;
+    float: left;
+  }
+  .col-sm-9 {
+    width: 75%;
     float: left;
   }
